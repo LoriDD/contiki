@@ -7,6 +7,7 @@ ifndef TARGET
 TARGET=avr-atmega128rfa1
 endif
 
+CONTIKI_SOURCEFILES += atmega128rfa1-aes.c
 #=======================================================================
 # AVRDUDE Settings
 #=======================================================================
@@ -31,7 +32,6 @@ CFLAGS+= -DUIP_CONF_IPV6_RPL
 #all: $(CONTIKI_PROJECT)
 CONTIKI = ../..
 include $(CONTIKI)/Makefile.include
-
 #=======================================================================
 # RULES: make u | make eu | make program
 #=======================================================================

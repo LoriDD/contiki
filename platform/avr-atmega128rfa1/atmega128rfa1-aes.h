@@ -4,7 +4,10 @@
  * \author
  *         Stefan Lorenz <s69401@informatik.htw-dresden.de>
  */
+#ifndef ATMEGA128RFA1_AES_H
+#define ATMEGA128RFA1_AES_H
 
+#include <stdint.h>
 /**
  * \brief      Setup an AES key
  * \param key  A pointer to a 16-byte AES key
@@ -42,3 +45,5 @@ void atmega128rfa1_aes_set_mode(int index);
  *
  */
 void atmega128rfa1_aes_cipher(uint8_t *data, int len, int direction);
+
+#endif /* ATMEGA128RFA1_AES_H */
